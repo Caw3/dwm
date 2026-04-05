@@ -106,7 +106,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      spawn,          {.v = slockcmd } },
-	{ MODKEY,                       XK_BackSpace, quit,           {0} },
+	{ MODKEY|ShiftMask,                       XK_BackSpace, quit,           {0} },
 	{ Mod1Mask,                     XK_Tab,    alttab,         {0} },
 };
 
