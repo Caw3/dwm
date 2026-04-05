@@ -3,6 +3,8 @@
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
+static const unsigned int tabModKey = 0x40;
+static const unsigned int tabCycleKey = 0x17;
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
@@ -105,6 +107,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      spawn,          {.v = slockcmd } },
 	{ MODKEY,                       XK_BackSpace, quit,           {0} },
+	{ Mod1Mask,                     XK_Tab,    alttab,         {0} },
 };
 
 /* button definitions */
